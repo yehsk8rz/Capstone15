@@ -5,7 +5,7 @@ The diode across the DC motor terminals will prevent negative voltage spikes fro
 
 The code is developed to accept a serial value between 0 and 255 to alter the PWM of pin 3.
 
-![[Capstone15/DCVibPrelim/pwm-arduino.gif]]
+![pwm-arduino](https://cloud.githubusercontent.com/assets/14209170/22125759/d062283a-de49-11e6-9edd-73b917d298e8.gif)
 
 For a 16 MHz Arduino the ADC clock is set to 16 MHz/128 = 125 KHz. Each conversion in AVR takes 13 ADC clocks so 125 KHz /13 = 9615 Hz
 The actual sampling rate may vary, but this could play a role when determining what we actually want to use as the vibration source & controller.
