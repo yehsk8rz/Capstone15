@@ -10,5 +10,5 @@ The code is developed to accept a serial value between 0 and 255 to alter the PW
 For a 16 MHz Arduino the ADC clock is set to 16 MHz/128 = 125 KHz. Each conversion in AVR takes 13 ADC clocks so 125 KHz /13 = 9615 Hz
 The actual sampling rate may vary, but this could play a role when determining what we actually want to use as the vibration source & controller.
 
-Using PWM is not the cleanest way to control the motor. It would probably be better to use a simple potentiometer to adjust the speed, but an Arduino to work as a tachometer that reads the actual speed in RPM. 
+Using PWM is not the cleanest way to control the motor. It would probably be better to use a simple potentiometer to adjust the speed, but an Arduino could be programmed as a tachometer that reads the actual speed in RPM. 
 To convert from RPM to Hz, we just divide by 60 since there are 60 seconds per minute and Hertz are a number of vibrations per second. The tachometer can just be an IR break beam/ reflection, or hall encoder.
