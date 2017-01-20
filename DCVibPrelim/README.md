@@ -1,3 +1,10 @@
+#Preliminary DC Controller
+
+This is a preliminary test that uses an Arduino microcontroller to adjust the speed of a DC cell phone vibrator motor.
+For pictures and a video demo, follow the Box Link: https://ucmerced.box.com/s/9qjkkzlt37kru2nd51f918z302qu677p
+
+The actual project may or may not utilize a DC motor vibrator
+
 Transistors are electronic switches. For schematics, NPN are “not pointing in” and amplify a current at the base. Using an NPN (PN2222) or PNP (BC558) will determine if high or low signals from the base will cause electricity to flow. 
 (for an NPN, a high base will allow electricity to flow, and for a PNP a low base will allow electricity to flow.
 
@@ -14,3 +21,11 @@ Using PWM is not the cleanest way to control the motor. It would probably be bet
 To convert from RPM to Hz, we just divide by 60 since there are 60 seconds per minute and Hertz are a number of vibrations per second. The tachometer can just be an IR break beam/ reflection, or hall encoder.
 
 ![wiring schematic](https://cloud.githubusercontent.com/assets/14209170/22127502/f49b8f78-de50-11e6-8a8c-468e15c0a20b.jpg)
+
+Some next steps:
+- Design a mounting unit with a tachometer (IR or Hall sensor)
+- Display actual RPM read by tacho
+- Adjust RPM via potentiometer
+- Create a "Sweeping" function that increases and dereases the frequency
+- Connect the device via bluetooth
+- Control and display on a phone app
